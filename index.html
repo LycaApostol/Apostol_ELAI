@@ -54,6 +54,65 @@
             Chatbot.init({
                 chatflowid: "aaac5bc6-b4a9-4bd1-8591-873917e49bcd",
                 apiHost: "http://localhost:3000",
+                theme: {
+                // --- BUTTON CONFIG ---
+                button: {
+                    backgroundColor: '#00CED1',
+                    right: 30,
+                    bottom: 30,
+                    size: 56,
+                    dragAndDrop: true,
+                    iconColor: 'black',
+                },
+                tooltip: {
+                    showTooltip: false,
+                },
+                // --- CHAT WINDOW CONFIG ---
+                chatWindow: {
+                    showTitle: true,
+                    title: 'REN-AI Assistant', /* Clean title, styling handles status */
+                    titleAvatarSrc: 'https://icons.iconarchive.com/icons/iconarchive/robot-avatar/512/Cyan-1-Robot-Avatar-icon.png',
+                    welcomeMessage: 'Ask me anything about the portfolio!',
+                    backgroundColor: '#0a0a0ac0',
+                    fontSize: 16,
+                    starterPrompts: [
+                        "Tell me about his skills",
+                        "Show me his projects",
+                        "What is his background?"
+                    ],
+                    sourceDocsTitle: 'Sources:',
+                    // Title Bar Styling
+                    titleBackgroundColor: '#00CED180', /* Dark header */
+                    titleTextColor: '#ffffff',
+                    // Message Styling
+                    botMessage: {
+                        backgroundColor: '#1f2937', /* Dark gray for bot bubble */
+                        textColor: '#e5e7eb',
+                        showAvatar: true,
+                        avatarSrc: 'https://icons.iconarchive.com/icons/iconarchive/robot-avatar/512/Cyan-1-Robot-Avatar-icon.png',
+                    },
+                    userMessage: {
+                        backgroundColor: '#00CED1', /* User message matches primary accent color */
+                        textColor: '#000000',
+                        showAvatar: false,
+                    },
+                    // Text Input Styling
+                    textInput: {
+                        placeholder: 'Type your message...',
+                        backgroundColor: '#1f2937', /* Input background dark gray */
+                        textColor: '#e5e7eb',
+                        sendButtonColor: '#00CED1',
+                        placeholderTextColor: '#9ca3af',
+                        maxChars: 100,
+                        autoFocus: true,
+                    },
+                    // Footer
+                    footer: {
+                        showFooter: false,
+                    }
+                }
+                /* customCSS property is now REMOVED */
+            }
             })
         </script>
     </section>
