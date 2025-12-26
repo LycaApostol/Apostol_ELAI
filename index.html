@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>Lyca Pearl Apostol</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#chatbot">Chatbot</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Eco-Friendly Tech Developer 🌱</h2>
+        <p>BSIT Student | Web & Mobile Developer</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+        <h3>About Me</h3>
+        <p>
+            I am a 4th year BSIT student developing smart and eco-friendly systems
+            like Green Route and SolarBin.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>Green Route</strong> – Planner for Cyclists & Pedestrians</li>
+            <li><strong>SolarBin</strong> – Smart Waste Management System</li>
+        </ul>
+    </section>
+
+    <!-- CHATBOT -->
+    <section id="chatbot" class="card chatbot-box">
+        <h3>Ask My AI Assistant 🤖</h3>
+        <p>You can ask about my projects, skills, and experience.</p>
+
+        <!-- Flowise Chatbot -->
+        <script type="module">
+            import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+            Chatbot.init({
+                chatflowid: "aaac5bc6-b4a9-4bd1-8591-873917e49bcd",
+                apiHost: "http://localhost:3000",
+            })
+        </script>
+    </section>
+
+    <footer>
+        <p>© 2025 Lyca Pearl Apostol || BSIT 4</p>
+    </footer>
+
+</body>
+
+</html>
